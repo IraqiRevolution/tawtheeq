@@ -1,5 +1,0 @@
-#!/bin/bash
-last=$(ls -d $1/*/ | tail -n 1 | grep  -Po '[0-9]+(?=/$)')
-let curr=$last+1
-mkdir $1/$curr 
-cp $1/$last/vitals.md $1/$curr/vitals.md  
